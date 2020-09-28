@@ -22,6 +22,7 @@ function createHTMLString(item) {
 	`;
 }
 
+// buttons filtering
 function onButtonClick(event, items) {
 	const dataset = event.target.dataset;
 	const key = dataset.key;
@@ -36,10 +37,10 @@ function onButtonClick(event, items) {
 }
 
 function setEventListeners(items) {
- const logo = document.querySelector('.logo');
- const btns = document.querySelector('.buttons');
- logo.addEventListener('click', () => displayItems(itmes));
- btns.addEventListener('click', event => onButtonClick(event, items));
+	const logo = document.querySelector('.logo');
+	const btns = document.querySelector('.buttons');
+	logo.addEventListener('click', () => displayItems(itmes));
+	btns.addEventListener('click', event => onButtonClick(event, items));
 }
 
 // main

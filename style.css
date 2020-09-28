@@ -8,8 +8,8 @@
   --color-light-grey: #dfdfdf;
 
   /*size*/
-  --base-space: 0.8rem;
-  --size-button: 60px;
+  --base-space: 0.3rem;
+  --size-button: 50px;
   --size-border: 0.4rem;
   --size-thumnail: 50px;
   --font-size: 1.2rem;
@@ -19,7 +19,7 @@
 }
 
 body {
-	height: 100vh;
+	height: 90vh;
 	background-color: var(--color-black);
 	display: flex;
 	flex-direction: column;
@@ -30,6 +30,13 @@ body {
 .logo {
 	cursor: pointer;
 	transition: transform var(--animation-duration) ease;
+}
+
+.buttons {
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .btn {
@@ -44,12 +51,6 @@ body {
 .btn:hover,
 .logo:hover {
 	transform: scale(1.1);
-}
-
-.buttons {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .imgBtn {
@@ -97,6 +98,7 @@ body {
 }
 
 .item_thumnail {
+	margin: 0 10px;
 	width: var(--size-thumnail);
 	height: var(--size-thumnail);
 }
@@ -104,4 +106,15 @@ body {
 .item_description {
 	margin-left: var(--base-space);
 	font-size: var(--font-size);
+}
+
+@media (max-width: 768px) {
+	.logo {
+		margin-top: 30px;
+	}
+
+	.items {
+		width: 90%;
+		height: 70%;
+	}
 }

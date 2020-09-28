@@ -1,7 +1,7 @@
 
 // Fetch the items from the JSON file
 function loadItems() {
-	return fetch('data/data.json')
+	return fetch('https://gyuryhan.github.io/clothing-warehouse/data/data.json')
 		.then(response => response.json())
 		.then(json => json.items);
 }
@@ -10,6 +10,7 @@ function loadItems() {
 function displayItems(items) {
 	const container = document.querySelector('.items');
 	container.innerHTML = items.map(item => createHTMLString(item)).join('');
+	console.log(items);
 }
 
 // Create HTML list item from the given data item

@@ -1,6 +1,7 @@
 # clothing-warehouse
 의류재고를 카테고리 별로 필터링 가능한 사이트입니다.
 - JS 사용, JSON fetch API로 데이터를 받아오는 방식으로 진행하였습니다.
+<hr>
 
 <h2 align="center"> main 화면입니다.
 
